@@ -1,0 +1,125 @@
+body{
+    background-color: #F2EBE3;
+margin: 0 10%;
+}
+
+h1{
+  font-size: 64;
+  color: #542A2A;
+  font-family: Bebas neue;
+}
+
+h2{
+    font-size: 48;
+    color: #542A2A;
+    font-family: Bebas neue;
+}
+
+h3{
+    font-size: 40;
+    color: #312E32;
+    font-family: Nunito;
+    font-style: italic;
+}
+
+p{
+  font-size: 24;
+  color: #1D191E;
+  font-family: Nunito;
+}
+
+a{
+    font-size: 24;
+    color: #DC8144;
+    font-family: Nunito;
+}
+
+a:hover{
+    font-size: 24;
+    color: #B75513;
+    font-family: Nunito;
+}
+#chart{
+    width: 550px;
+}
+
+#section1{
+    background-color: #997152;
+    padding-inline: 20px;
+    padding-block: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+#subscribe{
+    background-color: #553822;
+    border-radius: 3px;
+    color: #fff;
+    font-family: Nunito;
+    font-size: 32px;
+    border: 0px;
+    width: 170px;
+    height: 40px;
+    vertical-align: middle;
+}
+#newsletter{
+    background-color: #fff;
+    border-radius: 5px;
+    font-family: Nunito;
+    font-size: 24;
+    border: 0px;
+    width: 250px;
+    height: 40px;
+}
+#emailenter{
+    font-size: 24px;
+    font-family: Nunito;
+    color: #fff;
+}
+#news{
+    font-size: 40px;
+    font-family: Nunito;
+    color: #fff;
+}
+.related{
+    display: flex;
+    gap: 20px;
+}
+.related{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 390px;
+
+}
+#article_1{
+    grid-column: 1 / span 1;
+    grid-row: 1/span 1;
+    width: 330px;
+    height: 269px;
+}
+#article_2{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    width: 330px;
+    height: 269px;
+}
+#article_3{
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    width:330px;
+    height: 269px;
+}
+.related img{
+    width: 100%
+}
+#footer{
+    background-color: #D9D9D9;
+    height: 150px;
+}
+#nav{
+    height: 100px
+}
+#concerns{
+    height: 75px;
+    width: 300px;
+}

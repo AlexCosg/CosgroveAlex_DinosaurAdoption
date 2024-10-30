@@ -4,56 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <h1>Blog</h1>
-    <a href="index.html">press this shiny button</a>
     <header>
         <h1>Adopt a Dinosaur: A Prehistoric Adventure Awaits</h1><br>
         <p>Welcome to the most exciting and unique opportunity of a lifetime—adopting your very <br> own dinosaur! If you've ever dreamed of having a prehistoric companion, this guide will <br> walk you through everything you need to know. From choosing your dinosaur to <br> understanding the responsibilities of dino-ownership, we’ve got you covered.</p><br>
         <h2>Table of Contents</h2>
         <ol>
-            <li>Why adopt a dinosaur?</li>
-            <li>Choosing the right dinosaur</li>
-            <li>How to adopt</li>
-            <li>Caring for your dino</li>
-            <li>FAQs</li>
-            <li>Resources</li>
+            <li><h3>Why Adopt a Dinosaur?</h3></li>
+            <li><h3>Choosing the Right Dinosaur</h3></li>
+            <li><h3>How to Adopt</h3></li>
+            <li><h3>Caring for Your Dino</h3></li>
+            <li><h3>FAQs</h3></li>
+            <li><h3>Resources</h3></li>
         </ol>
     </header>
     <main>
         <article>
             <h2>Why adopt a dinosaur?</h2>
             <p>Adopting a dinosaur isn’t just about having a unique pet; it’s about embracing <br> a new adventure and making a difference. Dinosaurs, though extinct, play a <br> significant role in scientific research and education. By adopting a dinosaur, you <br> contribute to ongoing efforts in paleontology and conservation.</p><br>
-            <h3>The impace of dinosaur adoption</h3>
+            <h3>The Impact of Dinosaur Adoption</h3>
             <h2>Choosing the right dinosaur</h2>
             <p>Selecting a dinosaur can be a thrilling yet challenging decision. Consider factors such <br> as size, diet, and personality. Are you drawn to the mighty Tyrannosaurus rex or the <br> gentle Brachiosaurus? Here’s a quick guide to help you choose:</p><br>
-            <img src="assets/images/dinosaurchart.png" alt="A size and personality chart">
+            <img id="chart" src="Assets/Images/dinosaurchart.png" alt="A size and personality chart">
             <h2>How to adopt</h2>
             <p>Adopting a dinosaur involves a few steps. First, you need to choose your preferred <br> species, then complete an adoption application. Many organizations offer dinosaur <br> adoption programs with various levels of support and engagement.</p>
             <h3>Adoption Process</h3>
             <h2>Caring for your dino</h2>
             <p>Caring for your adopted dinosaur involves understanding its needs and ensuring its <br> well-being. From diet and habitat to enrichment activities, proper care is crucial for a <br> happy and healthy dinosaur.</p><br>
-            <h3>Dino care tips</h3>
+            <h3>Dino Care Tips</h3>
             <h2>Resources</h2>
             <p>For more information on adopting a dinosaur and supporting paleontological <br> research, check out the following resources:</p><br>
             <ul>
-                <li>National dinosaur museum</li>
-                <li>Dinosaur adoption program</li>
-                <li>Paleontology research society</li>
+                <li><h3>National dinosaur museum</h3></li>
+                <li><h3>Dinosaur adoption program</h3></li>
+                <li><h3>Paleontology research society</h3></li>
             </ul>
         </article>
-        <section>
-           <h2> Subscribe to our newsletter</h2>
+        <section id="section1">
+           <news id="news"> Subscribe to our newsletter</news>
            <form>
-                <label for="newsletter">Enter Your Email</label><br>
-                <input id="newsletter" type="email" placeholder="Dr_JohnHammond@JP.com"><br>
-                <button>Subscribe</button>
-           </form> 
+                <label id="emailenter" for="newsletter">Enter Your Email</label><br>
+                <input id="newsletter" type="email" placeholder="Dr_JohnHammond@JP.com">
+                <button id="subscribe">Subscribe</button>
+           </form>
+        </section>
+        <nav id="nav">
+            <h2>Navigation</h2>
+            <a href="adoptmenu.html">Adoption page</a> <br>
+            <a href="Information.html">Information page</a>
+        </nav>
+        <section>
+            <h2>Related Articles</h2>
+            <div class="related">
+            <articles id="article_1">
+                <a href="">
+                    <img src= "Assets/Images/ankylitterbox.png" alt="A picture of an ankylosaurus in a litterbox" width="330" height="269">
+                </a>
+                <h3>How to Potty Train an Ankylosaurus</h3>
+                <p>September 8th</p>
+            </articles>
+            <articles id="article_2">
+                <a href="">
+                    <img src="Assets/Images/utahnailsalon.png" alt="A picture of an utahraptor in a salon" width="340" height="269">
+                </a>
+                <h3>Trimming The Nails On Your Utahraptor</h3>
+                <p>August 31st</p>
+            </articles>
+            <articles id="article_3">
+                <a href="">
+                    <img src="Assets/Images/spinosaur.png" alt="A picture of an spinosaurus swimming with floaties on" width="360" height="269">
+                </a>
+                <h3>Spinosaurus Swimming Lessons</h3>
+                <p>August 18th</p>
+            </articles>
+            </div>
         </section>
     </main>
-    <footer>
-
-    </footer>
 </body>
+<footer id="footer">
+</footer>
 </html>
