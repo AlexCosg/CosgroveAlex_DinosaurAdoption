@@ -22,6 +22,17 @@ h3{
     font-style: italic;
 }
 
+h4{
+    font-size: 20;
+    color: #542A2A;
+
+}
+
+h5{
+    font-size: 16;
+    color: #542A2A
+}
+
 p{
   font-size: 24;
   color: #1D191E;
@@ -32,6 +43,7 @@ a{
     font-size: 24;
     color: #DC8144;
     font-family: Nunito;
+    transition: color .5s;
 }
 
 a:hover{
@@ -115,6 +127,7 @@ a:hover{
 #footer{
     background-color: #D9D9D9;
     height: 150px;
+    width: 100%;
 }
 #nav{
     height: 100px
@@ -122,4 +135,102 @@ a:hover{
 #concerns{
     height: 75px;
     width: 300px;
+}
+
+.dinosaurpictures{
+    display: flex;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 390px;
+}
+
+#dinosaur_1{
+    grid-column: 1 / span 1;
+    grid-row: 1/span 1;
+    width: 330px;
+    height: 269px;
+}
+#dinosaur_2{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    width: 330px;
+    height: 269px;
+}
+#dinosaur_3{
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    width:330px;
+    height: 269px;
+}
+#dinosaur_4{
+    grid-column: 4/ span 1;
+    grid-row: 1/ span 1;
+    width:330px;
+    height: 269px;
+}
+
+.label_1{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.label_2{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.label_3{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.label_4{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+#radioButton{
+   height: 200px;
+}
+
+#checkBox{
+    padding-top: 25px;
+    height: 30px;
+}
+
+
+/* laptop breakpoint size*/
+
+@media (max-width: 1726){
+
+body{
+    width: 50%;
+}
+}
+
+
+/* tablet breakpoint size */
+
+@media (max-width: 1024){
+    
+    body{
+        width:60%;
+    }
+
+}
+
+
+/* mobile breakpoint size*/
+
+@media (max-width: 393){
+
+    body{
+        width: 70%;
+    }
 }

@@ -14,58 +14,126 @@
         <h1>Adopt a Dinosaur: Your Prehistoric Pal Awaits!</h1>
         <p>Step back in time and choose from our herd of delightful dinos! Whether you're looking forc<br> a pint-sized herbivore or a ferocious T. rex, we have the perfect prehistoric pet for you.<br> Choose wisely!</p>
         <a href="blog.html">Blog page</a>
-    </header>
-    <main>
+     </header>
+     <main>
         <article>
-            <h2>Tiny and Tame Herbivores (perfect for first time moms and dads)</h2>
-            <ul>
+             <h2>Tiny and Tame Herbivores (perfect for first time moms and dads)</h2>
+             <ul>
                 <li><h3>Triceratops - Friendly, with a bony frill.</h3></li>
                 <li> <h3>Stegosaurus - Great at backyard defense, comes with its spiky tail.</h3></li>
                 <li><h3>Ankylosaurus - Built like a tank, but loves belly rubs.</h3></li>
                 <li><h3>Care Tips: These gentle giants are low-maintenance and love leafy greens!</h3></li>
-            </ul>
-            <h2>Mighty Meat Eaters (For the Adventurous)</h2>
-            <ul>
+             </ul>
+             <h2>Mighty Meat Eaters (For the Adventurous)</h2>
+             <ul>
                 <li><h3>Tyrannosaurus Rex - King of the Cretaceous!</h3></li>
                 <li><h3>Velociraptor - Speedy and smart, needs room to run.</h3></li>
                 <li><h3>Allosaurus - A perfect mix of size and power.</h3></li>
                 <li><h3>Care Tips: These carnivores need a large habitat and plenty of exercise (and meat)!</h3></li>
-            </ul>
-            <h2>Omnivorous Dinosaurs (Best of both worlds)</h2>
-            <ul>
+             </ul>
+             <h2>Omnivorous Dinosaurs (Best of both worlds)</h2>
+             <ul>
                 <li><h3>Oviraptor - Small but mighty, loves both meat and plants, plus it's <br> great with eggs!</h3></li>
                 <li><h3>Gigantoraptor - The Gigantoraptors large size made it excellent at <br> foraging and catching prey alike</h3></li>
                 <li><h3>Gallimimus - Quick-footed and adaptable, loves a variety of snacks, <br> from fruits to small critters.</h3></li>
                 <li><h3>Care Tips: Omnivores are flexible eaters, enjoying both leafy greens <br> and a protein-packed treat every now and then. Be sure to provide <br> a balanced diet!</h3></li>
-            </ul>
-            <h2>Flying Reptiles (For Sky-High Enthusiasts)</h2>
-            <ul>
+             </ul>
+             <h2>Flying Reptiles (For Sky-High Enthusiasts)</h2>
+             <ul>
                 <li><h3>Pteranodon - Soars high, loves open skies!</h3></li>
                 <li><h3>Quetzalcoatlus - Majestic and enormous, perfect for aspiring aviators.</h3></li>
                 <li><h3>Care Tips: Make sure your dino has a wide open area to spread its wings!</h3></li>
-            </ul>
-            <p>We have a wide selection of dinosaurs that will fit just right with <br> you. Below are an example of each type of dinosaur we have <br> available for adoption. Please answer the couple of questions we <br> have that help you decide on your perfect prehistoric pal.</p>
+             </ul>
+             <p>We have a wide selection of dinosaurs that will fit just right with <br> you. Below are an example of each type of dinosaur we have <br> available for adoption. Please answer the couple of questions we <br> have that help you decide on your perfect prehistoric pal.</p>
         </article>
         <section>
-            <p>What diet would you prefer?</p>
+             <p>What diet would you prefer?</p>
+             <form action="/action_page.php">
+                <label for="diet">Choose a diet:</label>
+                <select name="diet" id="diets">
+                  <option value="Carnivore">Carnivore</option>
+                  <option value="Herbivore">Herbivore</option>
+                  <option value="Omnivore">Omnivore</option>
+                </select>
+                <br><br>
+              </form>
+         </menu>
             <p>size of the dinosaur?</p>
-            <p>would  you like a flying reptile?</p>
-            <p>would you like it to be intelligent?</p>
+            <form action="/action_page.php">
+                <label for="Size">Choose a size:</label>
+                <select name="Size" id="Sizes">
+                  <option value="Small">Small</option>
+                  <option value="Medium">Meduim</option>
+                  <option value="Large">Large</option>
+                  <option value="Massive">Massive</option>
+                </select>
+                <br><br>
+              </form>
+            
+              <form id="radioButton" action="/action_page.php">
+                <p>Would you like a flying reptile?</p>
+               <input type="radio" class="Yes" name="flying" value="yes">
+               <label for="Yes">Yes</label><br>
+               <input type="radio" class="No" name="flying" value="No">
+               <label for="No">No</label><br>
+              
+                <br>  
+              
+                <p>Would you like an intelligent dinosaur?</p>
+               <input type="radio" class="Yes" name="intelligent" value="yes">
+               <label for="Yes">Yes</label><br>
+               <input type="radio" class="No" name="intelligent" value="No">
+               <label for="No">No</label><br>
+              </form>
+            
         </section>
         <section>
             <p>Do you have any comments or concerns?</p>
             <input id="concerns" placeholder="Please enter any concerns/comments">
         </section>
         <section>
-            <p>I have children or other pets</p>
+            <form id="checkBox" action="/action_page.php">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="children/pets"> I have children or other pets</label><br>
+              </form>
             <p>If you did not get a dinosaur you wished for you may also select on on your own</p>
+            <form action="/action_page.php">
+                <label for="dinosaur">Choose a new friend:</label>
+                <select name="dinosaur" id="dinosaurs">
+                  <option value="-">-</option>
+                  <option value="Triceratops">Triceratops</option>
+                  <option value="Stegosaurus">Stegosaurus</option>
+                  <option value="Ankylosaurus">Ankylosaurus</option>
+                  <option value="Tyrannosaurus">Tyrannosaurus</option>
+                  <option value="Velociraptor">Velociraptor</option>
+                  <option value="Allosaurus">Allosaurus</option>
+                  <option value="Oviraptor">Oviraptor</option>
+                  <option value="Gigantoraptor">Gigantoraptor</option>
+                  <option value="Gallimimus">Gallimimus</option>
+                  <option value="Pteranodon">Pteranodon</option>
+                  <option value="Quetzalcoatlus">Quetzalcoatlus</option>
+                </select>
+                <br><br>
+              </form>
         </section>
-        <section>
-            <div class="dinosaurpictures">
-                <section id="dinosaur1">
+        <div class="dinosaurpictures">
+                <section id="dinosaur_1">
+                    <img src="Assets/Images/oviraptor.jpg" alt="A picture of an oviraptor" width="300" height="223">
+                    <div class="label_1"><p>Jeremy</p> <h4>Oviraptor</h4> <h4>8 Months</h4></div>
+                </section>
+                <section id="dinosaur_2">
+                    <img src="Assets/Images/allosaurus.jpg" alt="A picture of an allosaurus" width="300" height="223">
+                    <div class="label_2"><p>Princess</p> <h4>Allosaurus</h4> <h4>2 Years</h4></div>
+                </section>
+                <section id="dinosaur_3">
+                    <img src="Assets/Images/Stegosaurus.png" alt="A picture of a stegosaurus" width="300" height="223">
+                    <div class="label_3"><p>Penny</p> <h4>Stegosaurus</h4> <h4>14 Months</h4></div>
+                </section>
+                <section id="dinosaur_4">
+                    <img src="Assets/Images/quetzalcoatlus.jpg" alt="A picture of a quetzalcoatlus" width="300" height="223">
+                    <div class="label_4"><p>Boeing</p> <h4>Quetzalcoatlus</h4> <h4>4 Years</h4></div>
                 </section>
             </div>
-        </section>
     </main>
 </body>
 <footer id="footer"></footer>
