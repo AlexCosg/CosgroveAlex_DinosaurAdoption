@@ -204,6 +204,56 @@ a:hover{
     height: 30px;
 }
 
+#Dinosaurs{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#Dinosaurs img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+#Dinosaurs article{
+    position: relative;
+}
+
+#Dinosaurs .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#Dinosaurs .overlay:hover{
+    opacity: 1;
+}
+
+#Dinosaurs .DinosaurName{
+    color: white;
+}
+
+#Dinosaurs .DinosaurDescription{
+    color: white;
+}
+
+
+
+
+
+
+
+
 
 /* laptop breakpoint size*/
 
