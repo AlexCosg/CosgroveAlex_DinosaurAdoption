@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagotchi game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div id="Pet">
+            <img id ='Sprite' src="">
+    </div>
+    <div id = "StatHunger">
+        <p id="Hunger">Hunger: <progress id="HungerBar" min = "0" max = "100" value = "100"></progress> </p>
+    </div>
+    <div id="StatSleep">
+        <p id="Sleep">Sleep: <progress id="SleepBar" min = "0" max = "100" value = "100"></progress></p>
+    </div>
+    <div id="StatPlay">
+        <p id="Play">Play: <progress id="PlayBar" min = "0" max = "100" value = "100"></progress></p>
+    </div>
+    <div id="DinosaurButtons">
+        <p id="DinosaurButtonsInputs"><input id="BtnHunger" type="button" value="Feed">
+                                      <input id="BtnSleep" type="button" value="Sleep">
+                                      <input id="BtnPlay" type="button" value="Play">
+        </p>
+    </div>
+    <div id="Instructions">
+        <p>HOW TO PLAY:<br>
+        Press the buttons to fill your pet's needs.
+        <br>If empty, the bars will not fill again
+        <br>If all three reach zero, it's game over</p>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
