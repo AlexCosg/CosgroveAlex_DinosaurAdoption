@@ -22,7 +22,7 @@ function gameovercheck(){
 
 function spriteHandler(){
     if (hunger==0&&Sleep==0&&Play==0){
-        document.getElementById("Sprite").src = ""
+        document.getElementById("Sprite").src = "Assets/Images/stegosaurdead.png"
             }
 }
 
